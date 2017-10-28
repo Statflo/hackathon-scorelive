@@ -1,4 +1,4 @@
-var ws = new WebSocket("wss ://scorelive.herokuapp.com/websocket", ["protocolOne", "protocolTwo"]);
+var ws = new WebSocket("wss://scorelive.herokuapp.com/websocket", ["protocolOne", "protocolTwo"]);
 var el = document.querySelector('#whoami');
 
 el.addEventListener('click', function(){
