@@ -34,10 +34,10 @@ Scoreboard.prototype = {
 
     updatePoints: function(home, visitors) {
         if (home) {
-            this.homePoints += home;
+            this.homePoints += 1;
         }
         if (visitors) {
-            this.visitorPoints += visitors;
+            this.visitorPoints += 1;
         }
         this.update();
     },
