@@ -13,6 +13,7 @@
     "@types/express-handlebars": "0.0.29",
     "@types/ws": "^3.2.0",
     "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
     "typescript": "^2.5.3",
     "ws": "^3.2.0"
   }
