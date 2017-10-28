@@ -54,7 +54,7 @@ wss.on('connection', (ws: Websocket) => {
 
         if (homeRegex.test(message)) {
             reply.home = message.replace(homeRegex, '');
-        } else if (homeRegex.test(message)) {
+        } else if (visitorRegex.test(message)) {
             reply.visitor = message.replace(visitorRegex, '');
         } else if (resetRegex.test(message)) {
             reply.reset = true;
