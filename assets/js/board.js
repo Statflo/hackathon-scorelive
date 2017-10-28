@@ -15,9 +15,9 @@ Scoreboard = function() {
             return;
         }
 
-        var home    = data.home || this.homePoints;
-        var visitor = data.visitor || this.visitorPoints;
-        this.updatePoints(parseInt(home), parseInt(visitor));
+        var home    = data.home;
+        var visitor = data.visitor;
+        this.updatePoints(home, visitor);
     }.bind(this);
 };
 
@@ -33,8 +33,12 @@ Scoreboard.prototype = {
     },
 
     updatePoints: function(home, visitors) {
-        this.homePoints    += home;
-        this.visitorPoints += visitors;
+        if (home) {
+            this.homePoints += home;
+        }
+        if (visitors) {
+            this.visitorPoints += visitors;
+        }
         this.update();
     },
 
