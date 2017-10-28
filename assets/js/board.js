@@ -59,8 +59,8 @@ Scoreboard.prototype = {
     },
 
     setupAnimation: function() {
-        var currentHome    = this.homePoints - 1;
-        var currentVisitor = this.visitorPoints - 1;
+        var currentHome    = this.homePoints;
+        var currentVisitor = this.visitorPoints;
 
         this.home.innerHTML = this.template({
             current:  (currentHome > 0) ? currentHome : 0,
